@@ -47,7 +47,7 @@ function App() {
                     className="mx-auto"
                   />
                   <h1 className="text-center mt-2">{product.name}</h1>
-                  <p className="text-center text-sm text-slate-700 mb-6">
+                  <p className="text-center text-sm text-slate-300 mb-6">
                     {product.description}
                   </p>
                   <h1 className="text-center">Rp {product.harga}</h1>
