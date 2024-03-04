@@ -21,11 +21,11 @@ function App() {
   return (
     <>
       <div>
-        <nav className="flex justify-between py-5 px-10 items-center bg-black">
+        <nav className="flex justify-between py-5 px-6 items-center bg-black fixed top-0 left-0 right-0">
           <h1 className="font-bold text-white text">SHAFIRA GAMIS</h1>
           <AiFillShopping className="fill-white text-2xl" />
         </nav>
-        <section className="hero bg-[url('https://www.shafira.com/wp-content/uploads/2024/02/MP-F-Web-1-1536x772.jpg')] h-[300px] md:h-[600px] bg-cover bg-center">
+        <section className="hero mt-[64px] bg-[url('https://www.shafira.com/wp-content/uploads/2024/02/MP-F-Web-1-1536x772.jpg')] h-[300px] md:h-[600px] bg-cover bg-center">
           <br />
         </section>
         <section className="product mt-4">
