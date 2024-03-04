@@ -7,12 +7,16 @@ function App() {
     {
       name: "Gamis Wanita",
       harga: "400.000",
+      description:
+        "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
       gambar:
         "https://www.shafira.com/wp-content/uploads/2024/01/3b-762x995.jpg",
     },
     {
       name: "Gamis Wanita Type II",
       harga: "500.000",
+      description:
+        "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
       gambar:
         "https://www.shafira.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-27-at-2.25.13-PM-762x995.jpeg",
     },
@@ -34,7 +38,7 @@ function App() {
           <div className="list-product px-6 mt-6 flex flex-col md:flex-row justify-center space-y-6 md:space-x-6 md:space-y-0">
             {product.map((product, i) => (
               <>
-                <div key={i}>
+                <div key={i} className="md:w-[350px]">
                   <img
                     src={product.gambar}
                     alt={product.name}
@@ -43,6 +47,9 @@ function App() {
                     className="mx-auto"
                   />
                   <h1 className="text-center mt-2">{product.name}</h1>
+                  <p className="text-center text-sm text-slate-700 mb-6">
+                    {product.description}
+                  </p>
                   <h1 className="text-center">Rp {product.harga}</h1>
                   <a
                     href={`https://wa.me/${owner}`}
