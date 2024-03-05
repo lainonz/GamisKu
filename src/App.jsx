@@ -1,24 +1,48 @@
 import { AiFillShopping } from "react-icons/ai";
+import gamis1 from "./assets/1.jpeg";
+import gamis2 from "./assets/2.jpeg";
+import gamis3 from "./assets/3.jpeg";
+import gamis4 from "./assets/4.jpeg";
+import gamis5 from "./assets/5.jpeg";
 
 function App() {
   let owner = 6289518312415;
 
   let product = [
     {
-      name: "Gamis Wanita",
-      harga: "400.000",
+      name: "Gamis",
+      harga: "",
       description:
-        "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-      gambar:
-        "https://www.shafira.com/wp-content/uploads/2024/01/3b-762x995.jpg",
+        "Bahan cringkle polos Lingkar dada : 105cm Panjang :135 cm Warna : ungu hitam armi tembaga coral",
+      gambar: gamis1,
     },
     {
-      name: "Gamis Wanita Type II",
-      harga: "500.000",
+      name: "Gamis",
+      harga: "",
       description:
-        "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-      gambar:
-        "https://www.shafira.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-27-at-2.25.13-PM-762x995.jpeg",
+        "Bahan cringkle d embos Lingkar dada : 105 cm Panjang : 135 cm Warna : nevi coksu milo",
+      gambar: gamis2,
+    },
+    {
+      name: "Gamis",
+      harga: "",
+      description:
+        "Bahan cringkle d embos Lingkar dada : 105 cm Panjang : 135 cm Warna : nevi coklatsusu milo sprinc",
+      gambar: gamis3,
+    },
+    {
+      name: "Gamis",
+      harga: "",
+      description:
+        "Bahan cringkle d embos Lingkar dada : 105 cm Panjang : 135 cm Warna : nevi coksu denim",
+      gambar: gamis4,
+    },
+    {
+      name: "Gamis",
+      harga: "",
+      description:
+        "Bahan cringkle d embos Lingkar dada : 105 cm Panjang : 135 cm Warna : coklatsusu sage marun milo",
+      gambar: gamis5,
     },
   ];
 
@@ -50,7 +74,7 @@ function App() {
                   <p className="text-center text-sm text-slate-600 mb-6">
                     {product.description}
                   </p>
-                  <h1 className="text-center">Rp {product.harga}</h1>
+                  <h1 className="text-center">Rp {product.hargaDiscount}</h1>
                   <a
                     href={`https://wa.me/${owner}`}
                     target="_blank"
