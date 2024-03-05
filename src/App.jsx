@@ -13,35 +13,35 @@ function App() {
       name: "Gamis",
       harga: "",
       description:
-        "Bahan cringkle polos Lingkar dada : 105cm Panjang :135 cm Warna : ungu hitam armi tembaga coral",
+        "Bahan cringkle polos<br/>Lingkar dada : 105cm<br/>Panjang : 135 cm<br/>Warna : ungu hitam armi tembaga coral",
       gambar: gamis1,
     },
     {
       name: "Gamis",
       harga: "",
       description:
-        "Bahan cringkle d embos Lingkar dada : 105 cm Panjang : 135 cm Warna : nevi coksu milo",
+        "Bahan cringkle d embos<br/>Lingkar dada : 105 cm<br/>Panjang : 135 cm<br/>Warna : nevi coksu milo",
       gambar: gamis2,
     },
     {
       name: "Gamis",
       harga: "",
       description:
-        "Bahan cringkle d embos Lingkar dada : 105 cm Panjang : 135 cm Warna : nevi coklatsusu milo sprinc",
+        "Bahan cringkle d embos<br/>Lingkar dada : 105 cm<br/>Panjang : 135 cm<br/>Warna : nevi coklatsusu milo sprinc",
       gambar: gamis3,
     },
     {
       name: "Gamis",
       harga: "",
       description:
-        "Bahan cringkle d embos Lingkar dada : 105 cm Panjang : 135 cm Warna : nevi coksu denim",
+        "Bahan cringkle d embos<br/>Lingkar dada : 105 cm<br/>Panjang : 135 cm<br/>Warna : nevi coksu denim",
       gambar: gamis4,
     },
     {
       name: "Gamis",
       harga: "",
       description:
-        "Bahan cringkle d embos Lingkar dada : 105 cm Panjang : 135 cm Warna : coklatsusu sage marun milo",
+        "Bahan cringkle d embos<br/>Lingkar dada : 105 cm</br>Panjang : 135 cm<br/>Warna : coklatsusu sage marun milo",
       gambar: gamis5,
     },
   ];
@@ -59,7 +59,7 @@ function App() {
         <section className="product mt-4">
           <h1 className="text-center font-bold text-2xl">OUR PRODUCT</h1>
           <hr className="border-[1px] border-black mx-auto w-[10%] mt-2" />
-          <div className="list-product px-6 mt-6 flex flex-col md:flex-row justify-center space-y-6 md:space-x-6 md:space-y-0">
+          <div className="list-product px-6 mt-6 flex flex-wrap flex-col md:flex-row justify-center space-y-6 md:space-x-6 md:space-y-0">
             {product.map((product, i) => (
               <>
                 <div key={i} className="md:w-[350px]">
@@ -71,9 +71,10 @@ function App() {
                     className="mx-auto"
                   />
                   <h1 className="text-center mt-2">{product.name}</h1>
-                  <p className="text-center text-sm text-slate-600 mb-6">
-                    {product.description}
-                  </p>
+                  <p
+                    className="text-center text-sm text-slate-600 mb-6"
+                    dangerouslySetInnerHTML={{ __html: product.description }}
+                  ></p>
                   <h1 className="text-center">Rp {product.harga}</h1>
                   <a
                     href={`https://wa.me/${owner}`}
