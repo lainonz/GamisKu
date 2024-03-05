@@ -74,7 +74,7 @@ function App() {
                   <p className="text-center text-sm text-slate-600 mb-6">
                     {product.description}
                   </p>
-                  <h1 className="text-center">Rp {product.hargaDiscount}</h1>
+                  <h1 className="text-center">Rp {product.harga}</h1>
                   <a
                     href={`https://wa.me/${owner}`}
                     target="_blank"
